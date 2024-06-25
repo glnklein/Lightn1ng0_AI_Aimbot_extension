@@ -12,7 +12,7 @@
 
 
 
-
+-Open Help with F1
 
 -Sets Lightn1ng0_AI_Aimbot menu to always foreground
 
