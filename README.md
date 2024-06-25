@@ -1,5 +1,5 @@
 
-# Lightn1ng0_AI_Aimbot extension is a collection of custom extensions for Lightn1ng0_AI_Aimbot.
+# Lightn1ng0_extension is a collection of custom extensions for Lightn1ng0_AI_Aimbot.
 
 
 
