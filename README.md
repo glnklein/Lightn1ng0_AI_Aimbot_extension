@@ -5,7 +5,7 @@
 
 
 <p align="center">
-  <img src="imgs/1go.png" widht="100%" />
+  <img src="imgs/go.png" widht="100%" />
 </p>
 
 
