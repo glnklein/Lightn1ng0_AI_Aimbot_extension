@@ -16,11 +16,17 @@
 
 -Sets Lightn1ng0_AI_Aimbot menu to always foreground
 
+-Rename Lightn1ng0_AI_Aimbot menu random
+
 -Show/hide menu with one key
 
 -Overlay frame removed
 
 -ESP box can be changed
+
+-Circle FOV added 
+
+-square FOV added/edit
 
 
 # Lightn1ng0_AI_Aimbot
