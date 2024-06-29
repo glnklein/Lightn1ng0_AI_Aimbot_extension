@@ -3,8 +3,11 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance Force
+Version=1.06
+FileInstall, load-blue.gif, %A_AppData%\Lightn1ng0_AI_Aimbot\load-blue.gif, 1
+FileInstall, preview.png, %A_AppData%\Lightn1ng0_AI_Aimbot\Lightn1ng0_AI_Aimbot\preview.png, 1
 
-
+loading() 
 
 
 Run ,%A_AppData%\Lightn1ng0_AI_Aimbot\run.bat , , Hide, ; Start Lightn1ng0_AI
@@ -12,14 +15,14 @@ Run ,%A_AppData%\Lightn1ng0_AI_Aimbot\run.bat , , Hide, ; Start Lightn1ng0_AI
 
 Text := "F7 Hidden/show square FOV `nF8 Hidden/show circle FOV `nF9   Set Overlay FOV fewer `nF10 Set Overlay FOV stronger `n`nF12 Show/Hide Lightn1ng0_AI`n`nEND Exit Lightn1ng0_AI"
 
-MsiMessageBox(Text, "Lightn1ng0_AI extension v1.05", 0x40)
+MsiMessageBox(Text, "Lightn1ng0_AI extension v"Version, 0x40)
 
 
 
 
 
 WinWait , Lightn1ng0 AI Aimbot ; Wait for Lightn1ng0_AI Windows 
-
+Gui, loading: Destroy
 
 WinSet, AlwaysOnTop , , Lightn1ng0 AI Aimbot  ; set Lightn1ng0_AI Windows Always on Top
 
@@ -150,7 +153,7 @@ return
 
 
 F1:: ; Help
-MsiMessageBox(Text, "Lightn1ng0_AI extension v1.05", 0x40)
+MsiMessageBox(Text, "Lightn1ng0_AI extension v"Version, 0x40)
 return
 
 
@@ -196,3 +199,21 @@ MakeGui() {
 	
 	return hwnd
 }
+
+
+ loading() { 
+ 
+	Gui, loading: Margin, 0, 0
+	pic := A_AppData "\Lightn1ng0_AI_Aimbot\load-blue.gif"
+	Gui, loading: Add, ActiveX, center w205 h205, % "mshtml:<img src='" pic "' />"
+	Gui, loading: -Caption +AlwaysOnTop +ToolWindow +LastFound 
+	WinSet, TransColor, 0xFFFFFF 155
+	Gui, loading: Show
+
+	return
+}
+
+
+
+
+
