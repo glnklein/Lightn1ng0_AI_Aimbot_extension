@@ -7,12 +7,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
 
-Run ,%A_AppData%\Lightn1ng0_AI_Aimbot\run.bat ; Start Lightn1ng0_AI
+Run ,%A_AppData%\Lightn1ng0_AI_Aimbot\run.bat , , Hide, ; Start Lightn1ng0_AI
 
 
 Text := "F7 Hidden/show square FOV `nF8 Hidden/show circle FOV `nF9   Set Overlay FOV fewer `nF10 Set Overlay FOV stronger `n`nF12 Show/Hide Lightn1ng0_AI`n`nEND Exit Lightn1ng0_AI"
 
-MsiMessageBox(Text, "Lightn1ng0_AI extension v1.04", 0x40)
+MsiMessageBox(Text, "Lightn1ng0_AI extension v1.05", 0x40)
 
 
 
@@ -150,7 +150,7 @@ return
 
 
 F1:: ; Help
-MsiMessageBox(Text, "Lightn1ng0_AI extension v1.04", 0x40)
+MsiMessageBox(Text, "Lightn1ng0_AI extension v1.05", 0x40)
 return
 
 
