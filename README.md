@@ -1,7 +1,7 @@
 
 # Lightn1ng0_extension is a collection of custom extensions for Lightn1ng0_AI_Aimbot.
 
-
+compatible with version 2.3
 
 
 <p align="center">
