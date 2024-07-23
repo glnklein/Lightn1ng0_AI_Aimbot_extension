@@ -10,7 +10,7 @@ FileInstall, preview.png, %A_AppData%\Lightn1ng0_AI_Aimbot\Lightn1ng0_AI_Aimbot\
 loading() 
 
 
-Run ,%A_AppData%\Lightn1ng0_AI_Aimbot\run.bat , , Hide, ; Start Lightn1ng0_AI
+Run ,%A_AppData%\Lightn1ng0_AI_Aimbot\run.bat , , , ; Start Lightn1ng0_AI
 
 
 Text := "F7 Hidden/show square FOV `nF8 Hidden/show circle FOV `nF9   Set Overlay FOV fewer `nF10 Set Overlay FOV stronger `n`nF12 Show/Hide Lightn1ng0_AI`n`nEND Exit Lightn1ng0_AI"
